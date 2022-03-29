@@ -1,0 +1,82 @@
+#-----------------------------------------------sin
+'''from math import pow
+angle = int(input('Angle: '))
+tta = angle*3.14/180 #convert angle to radian
+sin = tta - (pow(tta, 3)/6) + (pow(tta, 5)/120) - (pow(tta, 7)/5040) + \
+(pow(tta, 9)/362880) - (pow(tta, 11)/39916800)
+print('sin ', angle, '° is ', sin, sep='')'''
+#-----------------------------------------------bmm
+'''x = int(input('Enter #1 number: '))
+y = int(input('Enter #2 number: '))
+for i in range(1, x+1):
+    if x%i == 0:
+        if y%i == 0:
+            list = [i]
+            lasti = list[len(list)-1]
+print(lasti, sep=' ', end=' ')'''
+#------------------------------------------armstrong
+'''for num in range(1, 10000+1):
+    n = len(str(num))
+    sum = 0
+    x = num
+    while x > 0:
+        dig = x % 10
+        sum += dig ** n
+        x = x // 10
+    if sum == num :
+       print(num, end='  ')'''
+#-----------------------------------------------sezar
+'''word = input('Enter str: ')
+for letter in word:
+    asc = ord(letter)  #convert each character to ascii code by ord function
+    if asc != 120 and asc != 121 and asc != 122:
+        alp = chr(asc + 3)
+    elif asc == 120:
+        alp = chr(97)
+    elif asc == 121:
+        alp = chr(98)
+    elif asc == 122:
+        alp = chr(99)
+    print(alp, end='')'''
+#----------------------------------------newton-raphson
+'''def f(x):
+    return x**3 - x**2 + 2
+
+
+def df(x):
+    return 3*x**2 - 2*x
+
+
+for x0 in range(1, 10+1):
+    newraph = x0 - (f(x0))/(df(x0))
+    print("newton_raphson", {x0}, "=", newraph)'''
+#------------------------------------------------twenty
+'''a = float(input('Enter exactly 20 numbers: '))
+b = float(input())
+c = float(input())
+d = float(input())
+e = float(input())
+f = float(input())
+g = float(input())
+h = float(input())
+i = float(input())
+j = float(input())
+k = float(input())
+l = float(input())
+m = float(input())
+n = float(input())
+o = float(input())
+p = float(input())
+q = float(input())
+r = float(input())
+s = float(input())
+t = float(input())
+sum = a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t
+print('Summation of numbers: ', sum)
+avr = sum/20
+print('Average of numbers: ', avr)
+list = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t]
+maxi = max(list)
+print('Maximum of all numbers: ', maxi)
+mini = min(list)
+print('Minimum of all numbers: ', mini)'''
